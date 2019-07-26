@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\XamarinBackgroundKit\XamarinBackgroundKit.csproj" />
+    <ProjectReference Include="..\XamarinBackgroundKit.Skia\XamarinBackgroundKit.Skia.csproj" />
   </ItemGroup>
 
   <ItemGroup>

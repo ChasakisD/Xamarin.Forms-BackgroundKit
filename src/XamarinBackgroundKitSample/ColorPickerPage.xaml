@@ -12,7 +12,7 @@
         <controls:MaterialContentView
             Margin="32,16"
             Padding="16"
-            Background="{controls:BgProvider Color=White, CornerRadius=8, Elevation=8}"
+            Background="{controls:BackgroundBuilder Color=White, CornerRadius=8, Elevation=8}"
             VerticalOptions="Center">
             <StackLayout Spacing="8">
                 <ScrollView>

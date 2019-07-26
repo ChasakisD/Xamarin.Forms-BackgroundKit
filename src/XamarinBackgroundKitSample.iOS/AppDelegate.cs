@@ -4,6 +4,7 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using XamarinBackgroundKit.iOS;
+using XamarinBackgroundKit.Skia.iOS;
 
 namespace XamarinBackgroundKitSample.iOS
 {
@@ -14,6 +15,7 @@ namespace XamarinBackgroundKitSample.iOS
         {
             Popup.Init();
             BackgroundKit.Init();
+            SkiaBackgroundKit.Init();
 
             Forms.SetFlags("Visual_Experimental", "CollectionView_Experimental");
             Forms.Init();

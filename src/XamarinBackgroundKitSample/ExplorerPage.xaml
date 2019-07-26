@@ -34,7 +34,7 @@
             Padding="0,8,0,24"
             Spacing="8"
             Visual="Default"
-            background:BackgroundEffect.Background="{background:BgProvider Elevation=4, Color=White}" />
+            background:BackgroundEffect.Background="{background:BackgroundBuilder Elevation=4, Color=White}" />
 
         <ScrollView Grid.Row="1" Margin="16,-8,16,0" Padding="0,8,0,16">
             <StackLayout>

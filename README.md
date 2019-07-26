@@ -100,73 +100,73 @@ Everything you need to do is coming from XAML!
 ```xml
 <controls:MaterialContentView 
     HeightRequest="60" 
-    Background="{controls:BgProvider Color=White, CornerRadius=8, Elevation=8}" />
+    Background="{controls:BackgroundBuilder Color=White, CornerRadius=8, Elevation=8}" />
 ```
 
 #### Do you need just a color? 
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider Color=White}" />
+    Background="{controls:BackgroundBuilder Color=White}" />
 ```    
 
 #### Do you need rounded cornders?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider CornerRadius='LeftTop, RightTop, RightBottom, LeftBottom'}" />
+    Background="{controls:BackgroundBuilder CornerRadius='LeftTop, RightTop, RightBottom, LeftBottom'}" />
 ```   
 
 #### Do you need shadow? 
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider Elevation=8}" />
+    Background="{controls:BackgroundBuilder Elevation=8}" />
 ```    
 
 #### Do you need ripple? 
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider IsRippleEnabled=True, RippleColor=#80000000}" />
+    Background="{controls:BackgroundBuilder IsRippleEnabled=True, RippleColor=#80000000}" />
 ```   
 
 #### Do you need gradient?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider GradientBrush={controls:LinearGradient Start=Red, End=Green, Angle=70}}" />
+    Background="{controls:BackgroundBuilder GradientBrush={controls:LinearGradient Start=Red, End=Green, Angle=70}}" />
 ``` 
 
 #### Do you need more gradients?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider GradientBrush={controls:LinearGradient Gradients='Red,Green,Blue', Angle=70}}" />
+    Background="{controls:BackgroundBuilder GradientBrush={controls:LinearGradient Gradients='Red,Green,Blue', Angle=70}}" />
 ```
 
 #### Do you need border?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider BorderWidth=4, BorderColor=Red}" />
+    Background="{controls:BackgroundBuilder BorderWidth=4, BorderColor=Red}" />
 ```
 
 #### Do you need dashed border?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider BorderWidth=4, BorderColor=Red, DashGap=5, DashWidth=10}" />
+    Background="{controls:BackgroundBuilder BorderWidth=4, BorderColor=Red, DashGap=5, DashWidth=10}" />
 ```
 
 #### Do you need gradient border?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider BorderWidth=4, BorderGradientBrush={controls:LinearGradient Start=Red, End=Green, Angle=70}}" />
+    Background="{controls:BackgroundBuilder BorderWidth=4, BorderGradientBrush={controls:LinearGradient Start=Red, End=Green, Angle=70}}" />
 ```
 
 #### Do you need outer border?
 ```xml
 <controls:MaterialContentView 
-    Background="{controls:BgProvider BorderStyle=Outer}" />
+    Background="{controls:BackgroundBuilder BorderStyle=Outer}" />
 ```
 
 #### Don't you like MaterialContentView? Feel free to attach it anywhere by
 ```xml
 <StackLayout 
-    controls:BackgroundEffect.Background="{controls:BgProvider BorderStyle=Outer}" />
+    controls:BackgroundEffect.Background="{controls:BackgroundBuilder BorderStyle=Outer}" />
 ```
 
 #### Do you need a very complex background? You can achieve it by using only one view!

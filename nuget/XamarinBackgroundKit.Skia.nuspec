@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Xamarin.Forms.BackgroundKit.Skia</id>
+    <version>1.3.0</version>
+    <title>Xamarin.Forms.BackgroundKit.Skia</title>
+    <authors>ChasakisD</authors>
+    <owners>ChasakisD</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The way the Xamarin.Forms Background Customization in Xamarin.Forms should be</description>
+    <summary>Xamarin.Forms Background Customization Library for Skia Views</summary>
+    <projectUrl>https://github.com/ChasakisD/Xamarin.Forms.BackgroundKit</projectUrl>
+    <license type="file">LICENSE.md</license>
+    <copyright>Copyright 2018</copyright>
+    <tags>background, material, cardview, card, corner, cornerradius, radius, border, ripple, gradient, elevation, xamarin, forms, android, xamarin.forms, ios</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="SkiaSharp.Views.Forms" version="1.68.0" />
+        <dependency id="Xamarin.Forms.BackgroundKit" version="1.3.0" />
+      </group>
+      <group targetFramework="MonoAndroid90">
+        <dependency id="SkiaSharp.Views.Forms" version="1.68.0" />
+        <dependency id="Xamarin.Forms.BackgroundKit" version="1.3.0" />
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        <dependency id="SkiaSharp.Views.Forms" version="1.68.0" />
+        <dependency id="Xamarin.Forms.BackgroundKit" version="1.3.0" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+
+    <file src="..\LICENSE.md" target="" />
+
+    <!--netstandard-->
+
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.dll"
+        target="lib\netstandard2.0" />
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.pdb"
+        target="lib\netstandard2.0" />
+
+    <!--netstandard-->
+
+     <!--Android-->
+
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.dll"
+        target="lib\MonoAndroid90" />
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.pdb"
+        target="lib\MonoAndroid90" />
+
+    <file src="..\src\XamarinBackgroundKit.Skia.Android\bin\Release\XamarinBackgroundKit.Skia.Android.dll"
+        target="lib\MonoAndroid90" />
+    <file src="..\src\XamarinBackgroundKit.Skia.Android\bin\Release\XamarinBackgroundKit.Skia.Android.pdb"
+        target="lib\MonoAndroid90" />
+
+    <!--Android-->
+
+    <!--iOS-->
+
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.dll"
+        target="lib\Xamarin.iOS10" />
+    <file src="..\src\XamarinBackgroundKit.Skia\bin\Release\netstandard2.0\XamarinBackgroundKit.Skia.pdb"
+        target="lib\Xamarin.iOS10" />
+
+    <file src="..\src\XamarinBackgroundKit.Skia.iOS\bin\Release\XamarinBackgroundKit.Skia.iOS.dll"
+        target="lib\Xamarin.iOS10" />
+    <file src="..\src\XamarinBackgroundKit.Skia.iOS\bin\Release\XamarinBackgroundKit.Skia.iOS.pdb"
+        target="lib\Xamarin.iOS10" />
+
+    <!--iOS-->
+
+  </files>
+</package>

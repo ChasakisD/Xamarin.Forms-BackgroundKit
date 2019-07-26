@@ -5,6 +5,7 @@ using System.Linq;
 using Xamarin.Forms;
 using XamarinBackgroundKit.Controls;
 using XamarinBackgroundKit.Effects;
+using XamarinBackgroundKit.Skia.Controls;
 
 namespace XamarinBackgroundKitSample
 {
@@ -48,6 +49,11 @@ namespace XamarinBackgroundKitSample
             if (view is MaterialContentView materialView)
             {
                 materialView.Background = Background;
+            }
+            else if (view is SKBackgroundCanvasView skBackgroundCanvasView)
+            {
+                skBackgroundCanvasView.Padding = 24;
+                skBackgroundCanvasView.Background = Background;
             }
             else
             {
